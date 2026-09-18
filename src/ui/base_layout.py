@@ -4,23 +4,24 @@ def style_background_home():
     st.markdown("""
          <style>
                .stApp{
-                    background:#3368A0 !important;
+                    background:#F8F9FC !important;
                 }
 
                .stApp div[data-testid="stColumn"]{
-                    background-color:#F2EFE7 !important;
+                    background-color:#FFFFFF !important;
                     padding:2.5rem !important;
                     border-radius:3.5rem !important;
+                    box-shadow:0 8px 20px rgba(0,0,0,0.12) !impo
                } 
             </style>  
                 """ 
                 , unsafe_allow_html=True)
     
-def style_backgroun_dashboard():
+def style_background_dashboard():
     st.markdown("""
          <style>
                .stApp{
-                    background:#C8DFDB
+                    background:#F8F9FC !important;
 
                 }
             </style>  
@@ -39,22 +40,22 @@ def style_base_layout():
             }
             .block-container{ 
                 padding-top:1.5rem;    
-                }
+            }
             
             h1 {
                font-family: 'Valley Sans' , 'sans-serif' !important;
-               font-size:3rem !important;
+               font-size:2.7rem !important;
                line-height:0.9 !important;
                margin-bottom:0rem !important;
-               color:#4A4A4A !important;
+               color:#1A2B4C !important;
             }    
             
             h2 {
                 font-family: 'Valley Sans' , 'sans-serif' !important;
-                font-size:3rem !important;
+                font-size:2.7rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
-                color:#4A4A4A !important;
+                color:#1A2B4C !important;
             } 
             h3 ,h4 ,p {
                 font-family: 'Outfit','sans-serif';
@@ -62,8 +63,8 @@ def style_base_layout():
 
             button{
                 border-radius:1.5rem !important;
-                background:#FFF9D8 !important;
-                color:white !important;
+                background-color:#FF6B4A !important;
+                color:#FFFFFF !important;
                 font-weight:bold !important;
                 padding:10px 20px !important;
                 border: none !important;
@@ -74,8 +75,8 @@ def style_base_layout():
                 border-radius:1.5rem !important;
                 font-weight:600 !important;
                 font-size:2.5rem !important;
-                background:#FF9D50 !important;
-                color:black !important;
+                background-color:#2ECC9B !important;
+                color:#FFFFFF !important;
                 font-weight:bold !important;
                 padding:10px 20px !important;
                 border: none !important;
@@ -84,8 +85,8 @@ def style_base_layout():
 
             button[kind='tertiary']{
                 border-radius:1.5rem !important;
-                background:#55E07E !important;
-                color:black !important;
+                background-color:#8B7FF0 !important;
+                color:#FFFFFF !important;
                 padding:10px 20px !important;
                 font-weight:bold !important;
                 border: none !important;
@@ -93,6 +94,7 @@ def style_base_layout():
             } 
             button:hover{
                 transform :scale(1.05)
+                color:#E85A3A  !important;
             }
         </style>  
                 """ 
