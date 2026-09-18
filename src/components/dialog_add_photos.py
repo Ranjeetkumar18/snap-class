@@ -28,7 +28,7 @@ def add_photos_dialog():
     if st.session_state.photo_tab == 'camera' :
         cam_photo = st.camera_input('Take Snapshot',key='dialog_cam')
         if cam_photo:
-            st.session_state.attendance_imagess.append(Image.open(cam_photo)) 
+            st.session_state.attendance_images.append(Image.open(cam_photo)) 
             st.toast('photo Captured.')
             st.rerun()
 
