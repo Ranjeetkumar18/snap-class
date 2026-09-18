@@ -11,7 +11,7 @@ def main():
     )
 
     if 'login_type' not in st.session_state:
-        st.session_state['login_type'] = None
+        st.session_state['login_type'] = st.query_params.get('login_type',None)
 
     match st.session_state['login_type']:
         case 'teacher':
@@ -19,7 +19,10 @@ def main():
         case 'student':
             student_screen() 
         case None:
-            home_screen()       
+            home_screen()  
+
+    if st.session_state['login_type']:
+        st.query_params['login_type'] = st.session_state['login_type']             
 
     join_code = st.query_params.get('join-code')
     if join_code:
