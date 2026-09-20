@@ -4,11 +4,11 @@ def style_background_home():
     st.markdown("""
          <style>
                .stApp{
-                    background:#F8F9FC !important;
+                    background-color: rgb(216, 230, 238) !important;
                 }
 
                .stApp div[data-testid="stColumn"]{
-                    background-color:#FFFFFF !important;
+                    background-color: white !important;
                     padding:2.5rem !important;
                     border-radius:3.5rem !important;
                     box-shadow:0 8px 20px rgba(0,0,0,0.12) !impo
@@ -21,7 +21,7 @@ def style_background_dashboard():
     st.markdown("""
          <style>
                .stApp{
-                    background:#F8F9FC !important;
+                    background-color: rgb(216, 230, 238) !important;
 
                 }
             </style>  
