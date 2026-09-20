@@ -68,5 +68,5 @@ def process_bulk_audio(audio_bytes , candidates_dict, threshold =0.65):
 
         return identified_results         
     except Exception as e :
-        st.error('Bulk precess error')
+        st.error(f'Bulk precess error:{e}')
         return  {}
